@@ -2,11 +2,11 @@ import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "cva";
 import { HTMLAttributes, forwardRef } from "react";
 
-const heading = cva(["text-slate-900"], {
+const heading = cva(["text-slate-900 font-semibold"], {
   variants: {
     size: {
       big: "text-5xl",
-      small: "text-3xl",
+      small: "text-2xl",
     },
   },
   defaultVariants: {

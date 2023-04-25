@@ -1,18 +1,29 @@
 import { FC } from "react";
 import Button from "../UI/Button";
 import Title from "../UI/Title";
-import Logo from "../UI/Logo";
+import Image from "next/image";
 
 interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
-    <main className="mt-12 flex flex-col items-center">
-      <Button intent="primary" hasIcon={false} icon="">
-        Hello
+    <main className="mt-12 flex flex-col items-center mb-24">
+      <Title size="big" className="text-slate-900 mb-6 mt-24">
+        Documentation has never been easier
+      </Title>
+      <p className="mb-16 text-xl">
+        Generate comprehensive component documentation with one click.
+      </p>
+      <Button hasIcon icon="figma" className="mb-12">
+        Try For Free
       </Button>
-      <Title size="small">Hello</Title>
-      <Logo forFigma />
+      <Image
+        src={"/automator-hero.gif"}
+        alt="D"
+        width={720}
+        height={480}
+        className="mr-2 rounded-xl shadow-xl"
+      />
     </main>
   );
 };
