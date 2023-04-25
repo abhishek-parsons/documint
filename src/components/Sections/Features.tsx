@@ -8,10 +8,10 @@ interface FeaturesProps {}
 const Features: FC<FeaturesProps> = ({}) => {
   return (
     <div className="mt-12 flex flex-col items-center bg-slate-200 text-slate-800 rounded-3xl">
-      <Title size="small" className="mb-6 mt-12">
+      <Title size="small" className="mb-6 mt-12 sm:px-20 text-center">
         Packed with features to get you started!
       </Title>
-      <div className="flex justify-around mt-24 mb-24 px-12">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-10 justify-around mt-24 mb-24 px-12">
         <div className="px-6">
           <Figma size={48} className="mb-8" />
           <p className="text-xl font-semibold">Works with Figma</p>

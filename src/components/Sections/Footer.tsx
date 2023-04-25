@@ -6,9 +6,9 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <footer className="h-12 my-32 flex items-center justify-between">
+    <footer className="h-12 my-32 flex items-center justify-around">
       <Logo />
-      <div className="flex">
+      <div className="hidden md:flex">
         <Button intent={"link"} hasIcon icon="">
           Support
         </Button>
