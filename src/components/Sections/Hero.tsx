@@ -8,7 +8,9 @@ interface HeroProps {}
 const Hero: FC<HeroProps> = ({}) => {
   return (
     <main className="mt-12 flex flex-col items-center">
-      <Button intent="primary">Hello</Button>
+      <Button intent="primary" hasIcon={false} icon="">
+        Hello
+      </Button>
       <Title size="small">Hello</Title>
       <Logo forFigma />
     </main>

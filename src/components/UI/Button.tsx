@@ -29,16 +29,20 @@ const button = cva(["font-semibold border rounded-full py-2 px-4"], {
 
 interface ButtonProps
   extends HTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof button> {}
+    VariantProps<typeof button> {
+  hasIcon: boolean;
+  icon: string;
+}
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, intent, children, ...props }, ref) => {
+  ({ icon, className, intent, children, hasIcon, ...props }, ref) => {
     return (
       <button
         ref={ref}
         {...props}
         className={cn(button({ intent, className }))}
       >
+        {hasIcon ? icon : null}
         {children}
       </button>
     );
