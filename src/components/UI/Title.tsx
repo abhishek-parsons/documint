@@ -6,7 +6,7 @@ const heading = cva(["text-slate-900 font-semibold"], {
   variants: {
     size: {
       big: "text-5xl",
-      small: "text-2xl",
+      small: "text-3xl",
     },
   },
   defaultVariants: {
