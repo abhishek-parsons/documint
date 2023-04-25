@@ -24,4 +24,6 @@ const Logo: FC<LogoProps> = ({ forFigma }) => {
   );
 };
 
+Logo.displayName = "Logo";
+
 export default Logo;
